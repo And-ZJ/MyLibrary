@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/login_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_register_btn"
+                android:drawableRight="@drawable/right_arrow_blue"
+                android:drawableEnd="@drawable/right_arrow_blue"/>
+            <Button
+                android:id="@+id/system_msg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/system_msg_btn"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/admin_mode_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/right_arrow_blue"
+                android:drawableEnd="@drawable/right_arrow_blue"
+                android:text="@string/admin_btn"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/night_mode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="载入测试数据(第一次启动时使用/请等待一会)"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/system_set_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/system_setting_btn"
+            android:drawableRight="@drawable/right_arrow_blue"
+            android:drawableEnd="@drawable/right_arrow_blue"/>
+        <Button
+            android:id="@+id/exit_app_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_app_btn" />
+    </LinearLayout>
+</LinearLayout>

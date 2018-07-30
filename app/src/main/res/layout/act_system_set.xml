@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.andzj.mylibrary.model.MainTitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:title_text_color="@color/black"
+        attr:title_text="@string/system_setting_btn"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scrollbars="vertical">
+            <Switch
+                android:id="@+id/auto_receive_image_set_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_border"
+                android:padding="15dp"
+                android:text="@string/auto_receive_image_set_switch"/>
+            <Switch
+                android:id="@+id/history_record_set_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row_border"
+                android:padding="15dp"
+                android:text="记录搜索历史"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <Button
+            android:id="@+id/help_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_btn"
+            android:drawableRight="@drawable/right_arrow_blue"/>
+        <Button
+            android:id="@+id/about_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_btn"
+            android:drawableRight="@drawable/right_arrow_blue"/>
+    </LinearLayout>
+
+
+</LinearLayout>

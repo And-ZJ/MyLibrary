@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.andzj.mylibrary.model.MainTitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:title_text="我的评论信息"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/comment_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有评论数:"/>
+        <TextView
+            android:id="@+id/comment_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/no_comment_msg_hint_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="没有查询到评论信息"/>
+    <ListView
+        android:id="@+id/score_msg_list_view"
+        android:layout_width="match_parent"
+        android:divider="@color/blue"
+        android:dividerHeight="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

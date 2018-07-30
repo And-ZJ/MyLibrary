@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.andzj.mylibrary.model.MainTitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:title_text="编辑我的资料"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <TableRow android:background="@drawable/table_row_border">
+                    <TextView
+                        android:text="昵        称:"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical" />
+                    <EditText
+                        android:id="@+id/nickname_edit"
+                        android:hint="请输入新昵称(少于20字符)"
+                        android:padding="10dp"
+                        android:maxLength="20"
+                        android:layout_weight="1"  />
+                </TableRow>
+                <TableRow android:background="@drawable/table_row_border">
+                    <TextView
+                        android:text="性        别:"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"/>
+                        <RadioGroup
+                            android:padding="5dp"
+                            android:id="@+id/sex_radio_group"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/boy_radio_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:text="男"/>
+                            <RadioButton
+                                android:id="@+id/girl_radio_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="女"/>
+                            <RadioButton
+                                android:id="@+id/secret_radio_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="保密"/>
+                        </RadioGroup>
+                </TableRow>
+                <TableRow android:background="@drawable/table_row_border">
+                    <TextView
+                        android:text="绑定学号:"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/bind_student_account_edit"
+                        android:hint="请绑定新学号"
+                        android:padding="10dp"
+                        android:maxLength="20"
+                        android:inputType="number"
+                        android:layout_weight="1"  />
+                </TableRow>
+                <TableRow android:background="@drawable/table_row_border">
+                    <TextView
+                        android:text="个性签名:"
+                        android:textSize="18sp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="10dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"  >
+                        <EditText
+                            android:id="@+id/describe_words_edit"
+                            style="@android:style/Widget.Holo.Light.EditText"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="200"
+                            android:minLines="4"
+                            android:maxLines="15"
+                            android:gravity="top"
+                            android:hint="请输入新个性签名"/>
+                        <TextView
+                            android:id="@+id/describe_words_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/red"
+                            android:text="输入字符数不大于200个"/>
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/save_btn"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="保   存"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:background="@color/aquamarine"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

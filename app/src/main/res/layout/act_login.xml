@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.andzj.mylibrary.model.MainTitleLayout
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:title_text="Login"
+        attr:title_text_color="@color/red"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/account_text"/>
+            <EditText
+                android:id="@+id/login_account_edit"
+                android:layout_height="wrap_content"
+                android:inputType="phone|textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/account_login_edit_hint" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/password_text"/>
+            <EditText
+                android:id="@+id/login_password_edit"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password_edit_hint"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/remember_password_check"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"/>
+            <TextView
+                android:id="@+id/remember_password_view"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/remember_password_text"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/auto_login_check"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:enabled="false"/>
+            <TextView
+                android:id="@+id/auto_login_view"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="自动登录"/>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/forgot_password_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/forgot_password_btn"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_btn"/>
+        <Button
+            android:id="@+id/to_register_btn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_register_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

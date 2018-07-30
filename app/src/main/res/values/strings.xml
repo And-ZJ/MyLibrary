@@ -1,0 +1,86 @@
+<resources>
+    <string name="search_all">搜所有</string>
+
+    <string name="current_version">V1.0_beta</string>
+    <string name="app_name">MyLibrary</string>
+    <string name="first_page_btn">书库</string>
+    <string name="second_page_btn">书友</string>
+    <string name="third_page_btn">书房</string>
+    <string name="fourth_page_btn">书虫</string>
+    <string name="friends_msg_btn">好友消息</string>
+    <string name="friends_btn">好友列表</string>
+    <string name="search_edit_hint">请输入待搜索的字词</string>
+    <string name="search_btn">搜索</string>
+    <string name="borrow_msg_btn">借阅查询</string>
+    <string name="borrow_history_msg_btn">借阅历史</string>
+    <string name="collect_btn">我的藏书库</string>
+    <string name="comment_btn">我的书评</string>
+    <string name="more_btn">更多</string>
+    <string name="login_register_btn">登录/注册</string>
+    <string name="system_msg_btn">系统消息</string>
+    <string name="admin_btn">管理员入口</string>
+    <string name="night_mode_on_btn">夜间模式(开)</string>
+    <string name="night_mode_off_btn">夜间模式(关)</string>
+    <string name="system_setting_btn">系统设置</string>
+    <string name="exit_app_btn">退出软件</string>
+    <string name="account_text">帐号:</string>
+    <string name="account_login_edit_hint">请输入手机号进行登录</string>
+    <string name="account_register_edit_hint">请输入手机号进行注册</string>
+    <string name="password_text">密码:</string>
+    <string name="password_edit_hint">请输入密码</string>
+    <string name="remember_password_text">记住密码</string>
+    <string name="agree_agreement_btn">同意《用户协议》</string>
+    <string name="forgot_password_btn">忘记密码?</string>
+    <string name="login_btn">点击登录</string>
+    <string name="register_btn">注册</string>
+    <string name="to_register_btn">点击注册</string>
+    <string name="nickname_btn">昵称</string>
+    <string name="nickname_edit_hint">请输入昵称</string>
+    <string name="again_password_edit_hint">请再次输入密码</string>
+    <string name="register_title_text">新用户注册</string>
+    <string name="main_title_def_text">我的图书馆</string>
+    <string name="msg_inform_set_btn">消息通知</string>
+    <string name="browse_set_btn">浏览</string>
+    <string name="chat_set_btn">聊天</string>
+    <string name="privacy_set_btn">隐私</string>
+    <string name="help_btn">帮助</string>
+    <string name="about_btn">关于</string>
+    <string name="sound_set_switch">声音</string>
+    <string name="vibrate_set_switch">振动</string>
+    <string name="notification_set_switch">弹窗通知</string>
+    <string name="indicator_light_set_switch">指示灯闪烁</string>
+    <string name="disturb_mode_set_switch">勿扰模式</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="auto_receive_image_set_switch">移动数据下自动接收图片</string>
+    <string name="font_size_set_btn">字体大小</string>
+    <string name="theme_set_btn">主题</string>
+    <string name="chat_background_set_btn">聊天背景</string>
+    <string name="delete_all_chat_records_btn">删除所有聊天记录(不可恢复)</string>
+    <string name="blacklist_set_btn">黑名单</string>
+    <string name="browse_collect_set_btn">谁可看我的藏书库</string>
+    <string name="use_theme_background_btn">使用主题背景</string>
+    <string name="choose_from_photo_album_btn">从相册中选择</string>
+    <string name="take_a_picture_btn">随手拍</string>
+    <string name="warn_confirm_delete_records">确认删除?删除后不可恢复!</string>
+    <string name="yes">是</string>
+    <string name="ok">好的</string>
+    <string name="no">不</string>
+    <string name="only_friends">仅好友</string>
+    <string name="only_me">仅自己</string>
+    <string name="everyone">所有人</string>
+    <string name="software_introduce">软件介绍/更新说明</string>
+    <string name="feedback">反馈/建议</string>
+    <string name="check_update">检查更新</string>
+    <string name="contact_us">联系我们</string>
+    <string name="support_us">支持我们</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="software_language_set_btn">软件语言</string>
+
+</resources>
+
+
+
+
+
+

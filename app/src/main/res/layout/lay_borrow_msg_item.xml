@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
+        android:stretchColumns="1">
+        <TableRow
+            android:id="@+id/book_name_table_row"
+            android:visibility="gone">
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:padding="5dp"
+
+                android:text="书名:"/>
+            <TextView
+                android:id="@+id/book_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/book_isbn_table_row">
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="ISBN:"/>
+            <TextView
+                android:id="@+id/book_isbn_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/borrow_account_name_table_row">
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="借阅人:"
+                android:id="@+id/textView" />
+            <TextView
+                android:id="@+id/borrow_account_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="借阅时间:"/>
+            <TextView
+                android:id="@+id/borrow_time_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:text="到期时间:"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/return_time_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:text="借阅状态:"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/borrow_state_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:id="@+id/book_operate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:gravity="end">
+        <Button
+            android:id="@+id/comment_book_btn"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价"/>
+        <Button
+            android:id="@+id/return_book_btn"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归还"/>
+    </LinearLayout>
+
+</LinearLayout>

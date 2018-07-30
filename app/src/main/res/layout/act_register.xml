@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.andzj.mylibrary.model.MainTitleLayout
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:title_text="@string/register_title_text"
+        attr:title_text_color="@color/white"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/account_text"/>
+            <EditText
+                android:id="@+id/register_account_edit"
+                android:layout_height="wrap_content"
+                android:inputType="phone|textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/account_register_edit_hint" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/password_text"/>
+            <EditText
+                android:id="@+id/register_password_edit"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password_edit_hint"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/password_text"/>
+            <EditText
+                android:id="@+id/register_password2_edit"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/again_password_edit_hint"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/password_not_match_hint_view"
+                android:layout_column="1"
+                android:text="两次密码不一致"
+                android:textColor="@color/red"
+                android:layout_height="20dp"
+                android:visibility="gone"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/nickname_btn"/>
+            <EditText
+                android:id="@+id/register_nickname_edit"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/nickname_edit_hint"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="绑定学号"/>
+            <EditText
+                android:id="@+id/register_student_account_edit"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="请绑定您的学号"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/agree_agreement_check"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"/>
+            <Button
+                android:id="@+id/agree_agreement_btn"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/agree_agreement_btn"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
